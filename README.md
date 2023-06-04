@@ -1,5 +1,15 @@
 # Hough Transform Line Detection
 
+## Description
+
+This project implements the Hough Transform algorithm for line detection using Python. The Hough Transform is a popular technique in computer vision and image processing for detecting lines in an image. It works by converting the image space into a parameter space, where lines are represented by curves. By finding the intersections of these curves, we can identify the lines present in the original image.
+
+This project provides two variations of the Hough Transform:
+
+1. Normal Hough Transform: This implementation uses the classic Hough Transform algorithm to detect lines. It generates an accumulator matrix to store the voting values and then finds the peaks in the accumulator to determine the lines.
+
+2. Additive Hough Transform: This variation improves upon the Normal Hough Transform by considering local origins within the image. It divides the image into blocks and calculates the rho values of both the local origins and the initial block. By summing these rho values, the Additive Hough Transform enhances the line detection accuracy.
+
 ## Installation
 
 To run the code in this project, you need to have the following dependencies installed:
